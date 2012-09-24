@@ -1,0 +1,17 @@
+{
+    "hash": "02730542d9566a1323c09e1f53b9735a",
+    "packages": [
+        {
+            "package": "florianwolters/component-core-hashcode",
+            "version": "v0.1.0"
+        }
+    ],
+    "packages-dev": null,
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "florianwolters/component-core-hashcode": 10
+    }
+}
