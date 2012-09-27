@@ -1,9 +1,9 @@
 {
-    "hash": "02730542d9566a1323c09e1f53b9735a",
+    "hash": "83dcb7c8480cac0eebbca8f6a5237b17",
     "packages": [
         {
             "package": "florianwolters/component-core-hashcode",
-            "version": "v0.1.0"
+            "version": "v0.1.0-beta"
         }
     ],
     "packages-dev": null,
