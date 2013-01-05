@@ -13,8 +13,6 @@ This component is inspired by the method [`java.lang.Object.toString`][26] of th
 1. The interface `FlorianWolters\Component\Core\DebugPrintInterface`.
 2. The trait `FlorianWolters\Component\Core\DebugPrintTrait` which provides a default *Debug Print Method* implementation.
 
-It is suggested to use the trait `DebugPrintTrait` if the [PHP][17] version is equal or greater than 5.4.0.
-
 ## Features
 
 * Artifacts tested with both static and dynamic test procedures:
@@ -41,8 +39,7 @@ It is suggested to use the trait `DebugPrintTrait` if the [PHP][17] version is e
 
 ## Requirements
 
-* [PHP][17] >= 5.3.0
-* [PHP][17] >= 5.4.0 to use the trait `DebugPrintTrait`
+* [PHP][17] >= 5.4
 
 ## Installation
 
