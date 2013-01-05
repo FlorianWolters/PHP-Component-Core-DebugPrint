@@ -3,7 +3,7 @@ use FlorianWolters\Component\Core\DebugPrintInterface;
 
 /**
  * Demonstrates the usage of a custom *Debug Print Method* implementation by
- * overriding the method {@link HashCodeTrait::_-toString} of the trait {@link
+ * overriding the method {@link DebugPrintTrait::__toString} of the trait {@link
  * DebugMethodTrait}.
  *
  * @author    Florian Wolters <wolters.fl@gmail.com>

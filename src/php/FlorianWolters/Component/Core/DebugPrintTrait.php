@@ -2,7 +2,7 @@
 namespace FlorianWolters\Component\Core;
 
 /**
- * The trait {@link HashCodeTrait} provides a *Debug Print Method* for objects.
+ * The trait {@link DebugPrintTrait} provides a *Debug Print Method* for objects.
  *
  * @author    Florian Wolters <wolters.fl@gmail.com>
  * @copyright 2012 Florian Wolters
