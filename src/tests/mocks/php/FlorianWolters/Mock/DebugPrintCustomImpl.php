@@ -1,13 +1,16 @@
 <?php
+namespace FlorianWolters\Mock;
+
 use FlorianWolters\Component\Core\DebugPrintInterface;
+use FlorianWolters\Component\Core\DebugPrintTrait;
 
 /**
  * Demonstrates the usage of a custom *Debug Print Method* implementation by
- * overriding the method {@link DebugPrintTrait::__toString} of the trait {@link
+ * overriding the method {@see DebugPrintTrait::__toString} of the trait {@see
  * DebugMethodTrait}.
  *
  * @author    Florian Wolters <wolters.fl@gmail.com>
- * @copyright 2012 Florian Wolters
+ * @copyright 2012-2013 Florian Wolters
  * @license   http://gnu.org/licenses/lgpl.txt LGPL-3.0+
  * @link      http://github.com/FlorianWolters/PHP-Component-Core-DebugPrint
  * @since     Class available since Release 0.1.0
@@ -15,7 +18,7 @@ use FlorianWolters\Component\Core\DebugPrintInterface;
 class DebugPrintCustomImpl implements DebugPrintInterface
 {
     /**
-     * Imports the member method {@link DebugPrintTrait::__toString}.
+     * Imports the member method {@see DebugPrintTrait::__toString}.
      */
     use DebugPrintTrait;
 
