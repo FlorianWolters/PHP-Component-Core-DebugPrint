@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="generator" content="ApiGen 2.8.0" />
 
-	<title>Interface FlorianWolters\Component\Core\DebugPrintInterface | FlorianWolters\Component\Core</title>
+	<title>Trait FlorianWolters\Component\Core\DebugPrintTrait | FlorianWolters\Component\Core</title>
 
 	<script type="text/javascript" src="resources/combined.js?819867491"></script>
 	<script type="text/javascript" src="elementlist.js?1485372085"></script>
@@ -38,12 +38,12 @@
 
 			<h3>Interfaces</h3>
 			<ul>
-				<li class="active"><a href="class-FlorianWolters.Component.Core.DebugPrintInterface.html">DebugPrintInterface</a></li>
+				<li><a href="class-FlorianWolters.Component.Core.DebugPrintInterface.html">DebugPrintInterface</a></li>
 			</ul>
 
 			<h3>Traits</h3>
 			<ul>
-				<li><a href="class-FlorianWolters.Component.Core.DebugPrintTrait.html">DebugPrintTrait</a></li>
+				<li class="active"><a href="class-FlorianWolters.Component.Core.DebugPrintTrait.html">DebugPrintTrait</a></li>
 			</ul>
 
 
@@ -87,17 +87,16 @@
 	</div>
 
 <div id="content" class="class">
-	<h1>Interface DebugPrintInterface</h1>
+	<h1>Trait DebugPrintTrait</h1>
 
 
 	<div class="description">
 	
-<p>The interface <code><a href="class-FlorianWolters.Component.Core.DebugPrintInterface.html">FlorianWolters\Component\Core\DebugPrintInterface</a></code> indicates that an implementing class
-provides a <em>Debug Print Method</em> for objects.</p>
+<p>The trait <code><a href="class-FlorianWolters.Component.Core.DebugPrintTrait.html">FlorianWolters\Component\Core\DebugPrintTrait</a></code> provides a <em>Debug Print Method</em> for
+objects.</p>
 
-<p>By implementing the interface <code><a href="class-FlorianWolters.Component.Core.DebugPrintInterface.html">FlorianWolters\Component\Core\DebugPrintInterface</a></code> the implementing
-class signals that it implements the <em>Debug Print Method</em> implementation
-pattern.</p>
+<p>Always implement the interface <code><a href="class-FlorianWolters.Component.Core.DebugPrintInterface.html">FlorianWolters\Component\Core\DebugPrintInterface</a></code> if using the trait
+<code><a href="class-FlorianWolters.Component.Core.DebugPrintTrait.html">FlorianWolters\Component\Core\DebugPrintTrait</a></code>, since that allows <a href="http://php.net/language.oop5.typehinting">Type Hinting</a>.</p>
 
 	</div>
 
@@ -123,10 +122,10 @@ pattern.</p>
 				Florian Wolters &lt;<a
 href="mailto:wolters.fl&#64;gmail.com">wolters.fl&#64;<!---->gmail.com</a>&gt;<br />
 				<b>Since:</b>
-				Interface available since Release 0.1.0<br />
+				Trait available since Release 0.1.0<br />
 				<b>Link:</b>
 				<a href="http://github.com/FlorianWolters/PHP-Component-Core-DebugPrint">http://github.com/FlorianWolters/PHP-Component-Core-DebugPrint</a><br />
-		<b>Located at</b> FlorianWolters/Component/Core/DebugPrintInterface.php<br />
+		<b>Located at</b> FlorianWolters/Component/Core/DebugPrintTrait.php<br />
 	</div>
 
 
@@ -148,21 +147,34 @@ href="mailto:wolters.fl&#64;gmail.com">wolters.fl&#64;<!---->gmail.com</a>&gt;<b
 
 		<div class="description short">
 			
-<p>Returns a string representation of an object.</p>
+<p>Returns a string representation of the object.</p>
 
 		</div>
 
 		<div class="description detailed hidden">
 			
-<p>Returns a string representation of an object.</p>
+<p>Returns a string representation of the object.</p>
 
-<p>In general, the <code><a href="class-FlorianWolters.Component.Core.DebugPrintInterface.html#___toString">FlorianWolters\Component\Core\DebugPrintInterface::__toString()</a></code> method returns a string that "textually
-represents" an object. The result should be a concise but informative
-representation that is easy for a person to read.</p>
+<p>In general, the <code><a href="class-FlorianWolters.Component.Core.DebugPrintTrait.html#___toString">FlorianWolters\Component\Core\DebugPrintTrait::__toString()</a></code> method returns a string that "textually
+represents" the object using the trait <code><a href="class-FlorianWolters.Component.Core.DebugPrintTrait.html">FlorianWolters\Component\Core\DebugPrintTrait</a></code>. The result should
+be a concise but informative representation that is easy for a person to
+read.</p>
 
-<p>The method <code><a href="class-FlorianWolters.Component.Core.DebugPrintInterface.html#___toString">FlorianWolters\Component\Core\DebugPrintInterface::__toString()</a></code> is intended to be used only for debugging
+<p>The <code><a href="class-FlorianWolters.Component.Core.DebugPrintTrait.html#___toString">FlorianWolters\Component\Core\DebugPrintTrait::__toString()</a></code> method for trait <code><a href="class-FlorianWolters.Component.Core.DebugPrintTrait.html">FlorianWolters\Component\Core\DebugPrintTrait</a></code> returns a
+string consisting of the name of the class of which the object is an instance,
+the at-sign character <code>'@'</code>, and the unsigned hexadecimal
+representation of the hash code of the object. In other words, this method
+returns a string equal to the value of:</p>
+
+<pre
+class="php"><code>\get_class($this) . '@' . $this-&gt;hashCode());</code></pre>
+
+<p>The method <code><a href="class-FlorianWolters.Component.Core.DebugPrintTrait.html#___toString">FlorianWolters\Component\Core\DebugPrintTrait::__toString()</a></code> is intended to be used only for debugging
 purposes, and the content and format of the returned string may vary between
 implementations.</p>
+
+<p>The method <code><a href="class-FlorianWolters.Component.Core.DebugPrintTrait.html#___toString">FlorianWolters\Component\Core\DebugPrintTrait::__toString()</a></code> implements the <em>Debug Print Method</em>
+implementation pattern.</p>
 
 
 
