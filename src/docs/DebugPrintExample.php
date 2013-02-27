@@ -15,15 +15,17 @@ require __DIR__ . '/../../vendor/autoload.php';
  * @copyright 2012-2013 Florian Wolters
  * @license   http://gnu.org/licenses/lgpl.txt LGPL-3.0+
  * @link      http://github.com/FlorianWolters/PHP-Component-Core-DebugPrint
- * @since     Class available since Release 0.1.1
+ * @since     Class available since Release 0.2.0
  */
 final class DebugPrintExample
 {
     /**
-     * @param integer $argc
-     * @param array   $argv
+     * Runs the {@see DebugPrintExample}.
      *
-     * @return integer
+     * @param integer $argc The number of arguments.
+     * @param array   $argv The arguments.
+     *
+     * @return integer Always `0`.
      */
     public static function main($argc, array $argv = array())
     {

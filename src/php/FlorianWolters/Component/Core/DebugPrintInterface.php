@@ -2,11 +2,12 @@
 namespace FlorianWolters\Component\Core;
 
 /**
- * A class implements the {@see DebugPrintInterface} interface to indicate that
- * it offers a *Debug Print Method* with the name `__toString()`.
+ * The interface {@see DebugPrintInterface} indicates that an implementing class
+ * provides a *Debug Print Method* for objects.
  *
- * This interface signals that the implementing class uses the *Debug Print
- * Method* implementation pattern.
+ * By implementing the interface {@see DebugPrintInterface} the implementing
+ * class signals that it implements the *Debug Print Method* implementation
+ * pattern.
  *
  * @author    Florian Wolters <wolters.fl@gmail.com>
  * @copyright 2012-2013 Florian Wolters

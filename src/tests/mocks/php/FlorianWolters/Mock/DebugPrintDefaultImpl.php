@@ -12,7 +12,7 @@ use FlorianWolters\Component\Core\DebugPrintTrait;
  * @copyright 2012-2013 Florian Wolters
  * @license   http://gnu.org/licenses/lgpl.txt LGPL-3.0+
  * @link      http://github.com/FlorianWolters/PHP-Component-Core-DebugPrint
- * @since     Class available since Release 0.1.0
+ * @since     Class available since Release 0.2.0
  */
 class DebugPrintDefaultImpl implements DebugPrintInterface
 {

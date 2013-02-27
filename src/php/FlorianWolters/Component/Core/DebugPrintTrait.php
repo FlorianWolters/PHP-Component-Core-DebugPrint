@@ -4,6 +4,10 @@ namespace FlorianWolters\Component\Core;
 /**
  * The trait {@see DebugPrintTrait} provides a *Debug Print Method* for objects.
  *
+ * Always implement the interface {@see DebugPrintInterface} if using the trait
+ * {@see DebugPrintTrait}, since that allows {@link
+ * http://php.net/language.oop5.typehinting Type Hinting}.
+ *
  * @author    Florian Wolters <wolters.fl@gmail.com>
  * @copyright 2012-2013 Florian Wolters
  * @license   http://gnu.org/licenses/lgpl.txt LGPL-3.0+
@@ -24,11 +28,11 @@ trait DebugPrintTrait
      *
      * The {@see __toString} method for trait {@see DebugPrintTrait} returns a
      * string consisting of the name of the class of which the object is an
-     * instance, the at-sign character `@`, and the unsigned hexadecimal
+     * instance, the at-sign character `'@'`, and the unsigned hexadecimal
      * representation of the hash code of the object. In other words, this
      * method returns a string equal to the value of:
      * /---code php
-     * \get_class($this) . '@' . $this->hashCode())
+     * \get_class($this) . '@' . $this->hashCode());
      * \---
      *
      * The method {@see __toString} is intended to be used only for debugging
@@ -42,7 +46,6 @@ trait DebugPrintTrait
      */
     public function __toString()
     {
-        // TODO Abstract further by encapsulating the method \get_class?
         return \get_class($this) . '@' . $this->hashCode();
     }
 }

@@ -10,11 +10,13 @@ namespace FlorianWolters\Component\Core;
  * @link      http://github.com/FlorianWolters/PHP-Component-Core-DebugPrint
  * @since     Class available since Release 0.1.0
  *
- * @covers FlorianWolters\Component\Core\DebugPrintTrait
+ * @covers    FlorianWolters\Component\Core\DebugPrintTrait
  */
 class DebugPrintTraitTest extends \PHPUnit_Framework_TestCase
 {
     /**
+     * The object under test.
+     *
      * @var object
      */
     private $traitObject;

@@ -10,11 +10,13 @@ This component is inspired by the method [`java.lang.Object.toString`][26] of th
 
 **FlorianWolters\Component\Core\DebugPrint** consists of two artifacts:
 
-1. The interface `FlorianWolters\Component\Core\DebugPrintInterface`.
-2. The trait `FlorianWolters\Component\Core\DebugPrintTrait` which provides a default *Debug Print Method* implementation.
+1. The interface [`FlorianWolters\Component\Core\DebugPrintInterface`][30]: Indicates that an implementing class provides a *Debug Print Method* for objects.
+2. The trait [`FlorianWolters\Component\Core\DebugPrintTrait`][31]: Provides a default *Debug Print Method* implementation for objects.
 
 ## Features
 
+* Offers a default hash code value implementation for objects via the method `toString` of the trait [`FlorianWolters\Component\Core\DebugPrintTrait`][31]. Refer to the section [Usage](#using-the-default-implementation) below for an example.
+* Allows to create a custom hash code value implementation by implementing the interface [`FlorianWolters\Component\Core\DebugPrintInterface`][30], more precisely implementing the public method `toString` of that interface. Refer to the section [Usage](#using-a-custom-implementation) below for an example.
 * Artifacts tested with both static and dynamic test procedures:
     * Dynamic component tests (unit tests) implemented using [PHPUnit][19].
     * Static code analysis performed using the following tools:
@@ -36,6 +38,26 @@ This component is inspired by the method [`java.lang.Object.toString`][26] of th
 * Follows the [PSR-1][7] basic coding style guide.
 * Follows the [PSR-2][8] coding style guide.
 * Follows the [Semantic Versioning][20] Specification (SemVer) 2.0.0-rc.1.
+
+## Usage
+
+The best documentation for **FlorianWolters\Component\Core\DebugPrint** are the unit tests, which are shipped in the package. You will find them installed into your [PEAR][10] repository, which on Linux systems is normally `/usr/share/php/test`.
+
+The most important usage rule:
+
+> Always implement the interface [`DebugPrintInterface`][30] if using the trait [`DebugPrintTrait`][31], since that allows [Type Hinting][32].
+
+### Examples
+
+The class [`DebugPrintExample`](src/docs/DebugPrintExample.php) can be run via the command `php src/docs/DebugPrintExample.php` from the root of the project.
+
+#### Using the default implementation
+
+The class [`DebugPrintDefaultImpl`](src/tests/mocks/FlorianWolters/Mock/DebugPrintDefaultImpl.php) uses the default implementation of the trait [`DebugPrintTrait`][31].
+
+#### Using a custom implementation
+
+The class [`DebugPrintCustomImpl`](src/tests/mocks/FlorianWolters/Mock/DebugPrintCustomImpl.php) implements a custom implementation, which fulfills the design contract for a *Value Object*.
 
 ## Requirements
 
@@ -71,7 +93,7 @@ If you are creating a component that relies on **FlorianWolters\Component\Core\D
 ```json
 {
     "require": {
-        "florianwolters/component-core-debugprint": "0.1.*@beta"
+        "florianwolters/component-core-debugprint": "0.2.*"
     }
 }
 ```
@@ -86,30 +108,12 @@ If you are creating a component that relies on **FlorianWolters\Component\Core\D
     <package>
       <name>DebugPrint</name>
       <channel>pear.florianwolters.de</channel>
-      <min>0.1.0</min>
-      <max>0.1.99</max>
+      <min>0.2.0</min>
+      <max>0.2.99</max>
     </package>
   </required>
 </dependencies>
 ```
-
-## Usage
-
-The best documentation for **FlorianWolters\Component\Core\DebugPrint** are the unit tests, which are shipped in the package. You will find them installed into your [PEAR][10] repository, which on Linux systems is normally `/usr/share/php/test`.
-
-The most important usage rule:
-
-> Always implement the interface `DebugPrintInterface` if using the trait `DebugPrintTrait`.
-
-### Examples
-
-#### Using the default implementation
-
-<https://github.com/FlorianWolters/PHP-Component-Core-DebugPrint/blob/master/src/docs/DebugPrintDefaultImpl.php>
-
-#### Using a custom implementation
-
-<https://github.com/FlorianWolters/PHP-Component-Core-DebugPrint/blob/master/src/docs/DebugPrintCustomImpl.php>
 
 ## Development Environment
 
@@ -193,3 +197,9 @@ You should have received a copy of the GNU Lesser General Public License along w
       "PHP: Interfaces"
 [29]: http://php.net/language.oop5.traits
       "PHP: Traits"
+[30]: src/php/FlorianWolters/Component/Core/DebugPrintInterface.php
+      "FlorianWolters\Component\Core\DebugPrintInterface"
+[31]: src/php/FlorianWolters/Component/Core/DebugPrintTrait.php
+      "FlorianWolters\Component\Core\DebugPrintTrait"
+[32]: http://php.net/language.oop5.typehinting
+      "PHP: Type Hinting - Manual"
