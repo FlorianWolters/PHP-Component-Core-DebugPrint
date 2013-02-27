@@ -1,9 +1,52 @@
 {
-    "hash": "83dcb7c8480cac0eebbca8f6a5237b17",
+    "hash": "cf3b42273df0be82e896561588e57d20",
     "packages": [
         {
-            "package": "florianwolters/component-core-hashcode",
-            "version": "v0.1.0-beta"
+            "name": "florianwolters/component-core-hashcode",
+            "version": "v0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FlorianWolters/PHP-Component-Core-HashCode.git",
+                "reference": "v0.2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FlorianWolters/PHP-Component-Core-HashCode/zipball/v0.2.0",
+                "reference": "v0.2.0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "time": "2013-02-22 11:14:16",
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "FlorianWolters": [
+                        "src/php",
+                        "src/tests/mocks"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Florian Wolters",
+                    "email": "wolters.fl@gmail.com",
+                    "homepage": "http://blog.florianwolters.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Provides a hash code value for objects.",
+            "homepage": "http://github.com/FlorianWolters/PHP-Component-Core-HashCode",
+            "keywords": [
+                "hash",
+                "language",
+                "object"
+            ]
         }
     ],
     "packages-dev": null,
@@ -11,7 +54,7 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "florianwolters/component-core-hashcode": 10
-    }
+    "stability-flags": [
+
+    ]
 }
