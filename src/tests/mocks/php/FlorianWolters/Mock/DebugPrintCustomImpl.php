@@ -2,7 +2,6 @@
 namespace FlorianWolters\Mock;
 
 use FlorianWolters\Component\Core\DebugPrintInterface;
-use FlorianWolters\Component\Core\DebugPrintTrait;
 
 /**
  * Demonstrates the usage of a custom *Debug Print Method* implementation by
@@ -34,11 +33,7 @@ class DebugPrintCustomImpl implements DebugPrintInterface
     }
 
     /**
-     * Returns a string representation for this object.
-     *
      * {@inheritdoc}
-     *
-     * @return string The string representation.
      */
     public function __toString()
     {
