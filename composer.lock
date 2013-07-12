@@ -1,24 +1,27 @@
 {
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
     "hash": "cf3b42273df0be82e896561588e57d20",
     "packages": [
         {
             "name": "florianwolters/component-core-hashcode",
-            "version": "v0.2.0",
+            "version": "v0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FlorianWolters/PHP-Component-Core-HashCode.git",
-                "reference": "v0.2.0"
+                "reference": "v0.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FlorianWolters/PHP-Component-Core-HashCode/zipball/v0.2.0",
-                "reference": "v0.2.0",
+                "url": "https://api.github.com/repos/FlorianWolters/PHP-Component-Core-HashCode/zipball/v0.2.1",
+                "reference": "v0.2.1",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.4"
             },
-            "time": "2013-02-22 11:14:16",
             "type": "library",
             "autoload": {
                 "psr-0": {
@@ -40,21 +43,30 @@
                     "role": "Developer"
                 }
             ],
-            "description": "Provides a hash code value for objects.",
+            "description": "Provides a hash code value for objects as a PHP component.",
             "homepage": "http://github.com/FlorianWolters/PHP-Component-Core-HashCode",
             "keywords": [
                 "hash",
                 "language",
                 "object"
-            ]
+            ],
+            "time": "2013-03-01 11:31:56"
         }
     ],
-    "packages-dev": null,
+    "packages-dev": [
+
+    ],
     "aliases": [
 
     ],
     "minimum-stability": "stable",
     "stability-flags": [
+
+    ],
+    "platform": {
+        "php": ">=5.4"
+    },
+    "platform-dev": [
 
     ]
 }
