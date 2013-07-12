@@ -1,6 +1,8 @@
 # FlorianWolters\Component\Core\DebugPrint
 
 [![Build Status](https://secure.travis-ci.org/FlorianWolters/PHP-Component-Core-DebugPrint.png?branch=master)](http://travis-ci.org/FlorianWolters/PHP-Component-Core-DebugPrint)
+[![Dependency Status](https://www.versioneye.com/user/projects/51c330f85862c4000200053e/badge.png)](http://www.versioneye.com/user/projects/51c330f85862c4000200053e)
+[![Scrutinizer](https://scrutinizer-ci.com/images/brand-navbar.png)](https://scrutinizer-ci.com/g/FlorianWolters/PHP-Component-Core-DebugPrint/inspections)
 
 **FlorianWolters\Component\Core\DebugPrint** is a simple-to-use [PHP][17] component that provides the *Debug Print Method* implementation pattern as an [interface][28] and a [trait][29].
 
