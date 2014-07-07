@@ -1,16 +1,22 @@
 <?php
+/**
+ * FlorianWolters\Component\Core\DebugPrintTraitTest
+ *
+ * PHP Version 5.4
+ *
+ * @author    Florian Wolters <wolters.fl@gmail.com>
+ * @copyright 2012-2014 Florian Wolters (http://blog.florianwolters.de)
+ * @license   http://gnu.org/licenses/lgpl.txt LGPL-3.0+
+ * @link      http://github.com/FlorianWolters/PHP-Component-Core-DebugPrint
+ */
+
 namespace FlorianWolters\Component\Core;
 
 /**
  * Test class for {@see DebugPrintTrait}.
  *
- * @author    Florian Wolters <wolters.fl@gmail.com>
- * @copyright 2012-2013 Florian Wolters
- * @license   http://gnu.org/licenses/lgpl.txt LGPL-3.0+
- * @link      http://github.com/FlorianWolters/PHP-Component-Core-DebugPrint
- * @since     Class available since Release 0.1.0
- *
- * @covers    FlorianWolters\Component\Core\DebugPrintTrait
+ * @since  Class available since Release 0.1.0
+ * @covers FlorianWolters\Component\Core\DebugPrintTrait
  */
 class DebugPrintTraitTest extends \PHPUnit_Framework_TestCase
 {

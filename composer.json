@@ -2,7 +2,7 @@
     "name": "florianwolters/component-core-debugprint",
     "description": "The Debug Print Method implementation pattern as a PHP component.",
     "type": "library",
-    "keywords": ["debug print method", "language", "pattern", "tostring", "debug"],
+    "keywords": ["debug print method", "language", "core", "pattern", "tostring", "debug"],
     "homepage": "http://github.com/FlorianWolters/PHP-Component-Core-DebugPrint",
     "license": "LGPL-3.0+",
     "authors": [
@@ -15,14 +15,27 @@
     ],
     "require": {
         "php": ">=5.4",
-        "florianwolters/component-core-hashcode": "0.2.*"
+        "florianwolters/component-core-hashcode": ">=0.2"
+    },
+    "require-dev": {
+        "pdepend/pdepend": "2.*",
+        "phpmd/phpmd": "2.*",
+        "phpunit/phpunit": "4.*",
+        "sami/sami": "2.*",
+        "sebastian/phpcpd": "2.*",
+        "sebastian/phpdcd": "1.*",
+        "satooshi/php-coveralls": "0.*@dev",
+        "sensiolabs/security-checker": "1.*",
+        "squizlabs/php_codesniffer": "2.*@dev"
     },
     "autoload": {
-        "psr-0": {
-            "FlorianWolters": [
-                "src/php",
-                "src/tests/mocks/php"
-            ]
+        "psr-4": {
+            "FlorianWolters\\Component\\Core\\": "src/main/php"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FlorianWolters\\Example\\": "src/test/resources"
         }
     }
 }

@@ -1,4 +1,15 @@
 <?php
+/**
+ * FlorianWolters\Component\Core\DebugPrintInterface
+ *
+ * PHP Version 5.4
+ *
+ * @author    Florian Wolters <wolters.fl@gmail.com>
+ * @copyright 2012-2014 Florian Wolters (http://blog.florianwolters.de)
+ * @license   http://gnu.org/licenses/lgpl.txt LGPL-3.0+
+ * @link      http://github.com/FlorianWolters/PHP-Component-Core-DebugPrint
+ */
+
 namespace FlorianWolters\Component\Core;
 
 /**
@@ -9,11 +20,7 @@ namespace FlorianWolters\Component\Core;
  * class signals that it implements the *Debug Print Method* implementation
  * pattern.
  *
- * @author    Florian Wolters <wolters.fl@gmail.com>
- * @copyright 2012-2013 Florian Wolters
- * @license   http://gnu.org/licenses/lgpl.txt LGPL-3.0+
- * @link      http://github.com/FlorianWolters/PHP-Component-Core-DebugPrint
- * @since     Interface available since Release 0.1.0
+ * @since Interface available since Release 0.1.0
  */
 interface DebugPrintInterface
 {

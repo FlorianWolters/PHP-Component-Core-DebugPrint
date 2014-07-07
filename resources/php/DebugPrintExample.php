@@ -1,8 +1,20 @@
 <?php
-namespace FlorianWolters\Component\Core;
+/**
+ * FlorianWolters\Component\Core\DebugPrintExample
+ *
+ * PHP Version 5.4
+ *
+ * @author    Florian Wolters <wolters.fl@gmail.com>
+ * @copyright 2012-2014 Florian Wolters (http://blog.florianwolters.de)
+ * @license   http://gnu.org/licenses/lgpl.txt LGPL-3.0+
+ * @link      http://github.com/FlorianWolters/PHP-Component-Core-DebugPrint
+ */
 
-use FlorianWolters\Mock\DebugPrintCustomImpl;
-use FlorianWolters\Mock\DebugPrintDefaultImpl;
+namespace FlorianWolters\Example;
+
+use FlorianWolters\Component\Core\DebugPrintInterface;
+use FlorianWolters\Example\DebugPrintCustomImpl;
+use FlorianWolters\Example\DebugPrintDefaultImpl;
 
 require __DIR__ . '/../../vendor/autoload.php';
 
@@ -11,11 +23,7 @@ require __DIR__ . '/../../vendor/autoload.php';
  * application to demonstrate the component
  * **FlorianWolters\Component\Core\DebugPrint**.
  *
- * @author    Florian Wolters <wolters.fl@gmail.com>
- * @copyright 2012-2013 Florian Wolters
- * @license   http://gnu.org/licenses/lgpl.txt LGPL-3.0+
- * @link      http://github.com/FlorianWolters/PHP-Component-Core-DebugPrint
- * @since     Class available since Release 0.2.0
+ * @since Class available since Release 0.2.0
  */
 final class DebugPrintExample
 {
