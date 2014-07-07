@@ -1,0 +1,7 @@
+var search_data = {
+    'index': {
+        'searchIndex': ["florianwolters","florianwolters\\component","florianwolters\\component\\core","florianwolters\\component\\core\\debugprintinterface","florianwolters\\component\\core\\debugprinttrait","florianwolters\\component\\core\\debugprintinterface::__tostring","florianwolters\\component\\core\\debugprinttrait::__tostring"],
+        'info': [["FlorianWolters","","FlorianWolters.html","","",3],["FlorianWolters\\Component","","FlorianWolters\/Component.html","","",3],["FlorianWolters\\Component\\Core","","FlorianWolters\/Component\/Core.html","","",3],["DebugPrintInterface","FlorianWolters\\Component\\Core","FlorianWolters\/Component\/Core\/DebugPrintInterface.html","","The interface {@see DebugPrintInterface} indicates",1],["DebugPrintTrait","FlorianWolters\\Component\\Core","FlorianWolters\/Component\/Core\/DebugPrintTrait.html","","The trait {@see DebugPrintTrait} provides a *Debug",1],["DebugPrintInterface::__toString","FlorianWolters\\Component\\Core\\DebugPrintInterface","FlorianWolters\/Component\/Core\/DebugPrintInterface.html#method___toString","()","Returns a string representation of an object.",2],["DebugPrintTrait::__toString","FlorianWolters\\Component\\Core\\DebugPrintTrait","FlorianWolters\/Component\/Core\/DebugPrintTrait.html#method___toString","()","Returns a string representation of the object.",2]]
+    }
+}
+search_data['index']['longSearchIndex'] = search_data['index']['searchIndex']
