@@ -32,9 +32,9 @@ matrix:
   allow_failures:
     - php: hhvm
 
-before_script:
+install:
   - composer selfupdate
-  - composer install --prefer-source
+  - composer install --prefer-source --dev
   - wget https://scrutinizer-ci.com/ocular.phar
 
 script:
